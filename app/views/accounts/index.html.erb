@@ -1,0 +1,22 @@
+<div class="form-container">
+      <div>
+        <div data-behavior="area-list">
+          <% for area in @accounts %>
+            <%= render 'accounts/content', account: area %>
+            <br/>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="add-action">
+        <%= link_to ' + Add New Section', new_account_path,
+                    remote: true,
+                    class: 'btn btn-primary add-hours' %>
+      </div>
+
+      <div class="actions">
+        <%= link_to "", class: 'btn btn-outline btn-primary' do %>
+          Save &amp; Go to Replacement
+        <% end %>
+      </div>
+    </div>

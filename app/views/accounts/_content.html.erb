@@ -1,0 +1,19 @@
+<div class="form-group account-sections-wrap" data-behavior="account-item" data-id="<%= account.id %>">
+
+<div class="cont-group">
+  <div class="hours-account-cont field-container">
+    <%= text_field_tag "account[#{account.id}]name", account.name,
+                        class: 'form-control input-default',
+                        placeholder: 'account name',
+                        'data-behavior' => 'input-account-name' %>
+  </div>
+  <div class="hours-account-cont field-container">
+    <%= text_field_tag "account[#{account.id}]place", account.place,
+                        class: 'form-control input-default',
+                        placeholder: 'account place',
+                        'data-behavior' => 'input-account-place' %>
+  </div>
+ 
+</div>
+
+</div>
